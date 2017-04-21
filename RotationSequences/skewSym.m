@@ -10,7 +10,7 @@ rotations = symvar(R);
 R_dot = zeros(3,3);
 
 for i = 1:length(rotations)
-    idot = sym([char(rotations(i)) 'dot']);
+    idot = sym([char(rotations(i)) 'dot'],'real');
     R_dot = R_dot + diff(R,rotations(i))*idot;
 end
 

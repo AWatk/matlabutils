@@ -8,7 +8,7 @@ function W = rotVelFromSkewSym(S)
 %       S: skew-symmetric matrix defined as S = R_dot*R, where R_dot is the
 %       time derivative of R
 
-W = zeros(3,1);
+W = sym(zeros(3,1));
 
 W(1) = S(3,2);
 W(2) = S(1,3);
