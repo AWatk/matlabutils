@@ -1,10 +1,10 @@
 function Rz = rotz(angle)
 % ROTZ Rotation matrix about the z axis
 %  Rz = rotz(angle) returns the rotation matrix about the z axis for the
-%  given angle in radians.
+%  given angle in degrees.
 
-Rz = [  cos(angle) -sin(angle)    0;
-        sin(angle) cos(angle)     0;
+Rz = [  cosd(angle) -sind(angle)    0;
+        sind(angle) cosd(angle)     0;
         0           0               1     ];
 
 

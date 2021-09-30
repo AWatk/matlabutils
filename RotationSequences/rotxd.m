@@ -1,11 +1,11 @@
-function Rx = rotx(angle)
+function Rx = rotxd(angle)
 % ROTX Rotation matrix about the x axis
 %  Rx = rotx(angle) returns the rotation matrix about the x axis for the
-%  given angle in radians.
+%  given angle in degrees.
 
 Rx = [  1   0           0;
-        0   cos(angle) -sin(angle);
-        0   sin(angle) cos(angle)     ];
+        0   cosd(angle) -sind(angle);
+        0   sind(angle) cosd(angle)     ];
 
 
 end
